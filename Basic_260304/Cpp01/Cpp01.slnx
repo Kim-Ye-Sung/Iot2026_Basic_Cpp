@@ -3,9 +3,14 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="class01/class01.vcxproj" />
-  <Project Path="class02/class02.vcxproj" />
-  <Project Path="class03/class03.vcxproj" />
-  <Project Path="class04/class04.vcxproj" />
-  <Project Path="new01/new01.vcxproj" />
+  <Project Path="class01/class01.vcxproj" Id="4209205c-ea46-4d1f-8bc4-0dbcb48c3289" />
+  <Project Path="class02/class02.vcxproj" Id="11da9ac6-30ca-4fee-8f0d-d259217958bd" />
+  <Project Path="class03/class03.vcxproj" Id="0b81c002-1c4f-4c8d-92f0-322126425e46" />
+  <Project Path="class04/class04.vcxproj" Id="459d39be-c2f2-4575-8dd6-edeb603c98a3" />
+  <Project Path="class05/class05.vcxproj" Id="729f3391-5c12-4fa3-8fd5-ef70732c5eaa" />
+  <Project Path="conversionconstructor/conversionconstructor.vcxproj" Id="57df0cac-3a6c-47b4-be2f-00ddca9a175f" />
+  <Project Path="moveconstructor/moveconstructor.vcxproj" Id="6cc638d2-d9f6-4e99-95f8-bb4ba8dd0f1b" />
+  <Project Path="MyClass/MyClass.vcxproj" Id="d4c5c13e-53f0-44f9-a215-1edef49f90f4" />
+  <Project Path="new01/new01.vcxproj" Id="2b3d2527-f445-41a3-b52d-a16334dc86d7" />
+  <Project Path="rvalue/rvalue.vcxproj" Id="a5cb7f17-3bc2-454a-856e-d3a42389fd56" />
 </Solution>
