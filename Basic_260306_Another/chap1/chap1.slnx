@@ -3,7 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Basic/Basic.vcxproj" />
-  <Project Path="Basic2/Basic2.vcxproj" />
-  <Project Path="Basic3/Basic3.vcxproj" />
+  <Project Path="Basic/Basic.vcxproj" Id="914412e4-da3e-43c9-bfa6-4a71b54bd3e0" />
+  <Project Path="Basic2/Basic2.vcxproj" Id="642f0924-1813-4fb7-9f60-e6e0b5b6c0b8" />
+  <Project Path="Basic3/Basic3.vcxproj" Id="53c09bac-110f-483c-ad70-0c1aff052b19" />
 </Solution>
