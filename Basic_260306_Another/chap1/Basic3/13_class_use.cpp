@@ -23,8 +23,6 @@ public:
 
 		this->aaa = a->aaa;
 
-		a->aaa = 20;
-
 		return *this;
 	}
 
