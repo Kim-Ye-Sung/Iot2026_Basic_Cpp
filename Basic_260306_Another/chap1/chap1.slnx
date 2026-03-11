@@ -3,11 +3,14 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="../../../../../../../../SourceBank/Iot2026_Basic_Cpp/Basic_260306_Another/chap1/Basic/Basic.vcxproj" Id="914412e4-da3e-43c9-bfa6-4a71b54bd3e0" />
-  <Project Path="../../../../../../../../SourceBank/Iot2026_Basic_Cpp/Basic_260306_Another/chap1/Basic2/Basic2.vcxproj" Id="642f0924-1813-4fb7-9f60-e6e0b5b6c0b8" />
-  <Project Path="../../../../../../../../SourceBank/Iot2026_Basic_Cpp/Basic_260306_Another/chap1/Basic3/Basic3.vcxproj" Id="53c09bac-110f-483c-ad70-0c1aff052b19" />
-  <Project Path="../../../../../../../../SourceBank/Iot2026_Basic_Cpp/Basic_260306_Another/chap1/ClassPractice/ClassPractice.vcxproj" Id="db56a691-eac7-4bba-b519-91b9660109e6" />
-  <Project Path="../../../../../../../../SourceBank/Iot2026_Basic_Cpp/Basic_260306_Another/chap1/ClassPractice2/ClassPractice2.vcxproj" Id="24cb79b3-8d87-462a-827c-3bc2543e52fb" />
-  <Project Path="../../../../../../../../SourceBank/Iot2026_Basic_Cpp/Basic_260306_Another/chap1/ClassPractice3/ClassPractice3.vcxproj" Id="9aa4d845-f607-4399-894d-a1690076bad0" />
-  <Project Path="../../../../../../../../SourceBank/Iot2026_Basic_Cpp/Basic_260306_Another/chap1/ClassPractice4/ClassPractice4.vcxproj" Id="d6e67334-4cfb-4bd2-82ce-134753adeeca" />
+  <Project Path="ArrayEx/ArrayEx.vcxproj" Id="8f4e752f-047f-40b5-b398-f61240633678" />
+  <Project Path="Basic/Basic.vcxproj" Id="914412e4-da3e-43c9-bfa6-4a71b54bd3e0" />
+  <Project Path="Basic2/Basic2.vcxproj" Id="642f0924-1813-4fb7-9f60-e6e0b5b6c0b8" />
+  <Project Path="Basic3/Basic3.vcxproj" Id="53c09bac-110f-483c-ad70-0c1aff052b19" />
+  <Project Path="ClassPractice/ClassPractice.vcxproj" Id="db56a691-eac7-4bba-b519-91b9660109e6" />
+  <Project Path="ClassPractice2/ClassPractice2.vcxproj" Id="24cb79b3-8d87-462a-827c-3bc2543e52fb" />
+  <Project Path="ClassPractice3/ClassPractice3.vcxproj" Id="9aa4d845-f607-4399-894d-a1690076bad0" />
+  <Project Path="ExceptionHandling/ExceptionHandling.vcxproj" Id="bdfa4797-42b2-4036-a190-68db2eb076b0" />
+  <Project Path="MultiInheritance/MultiInheritance.vcxproj" Id="d279fc8c-48ca-4c9d-a858-218080065f90" />
+  <Project Path="StudentMng/StudentMng.vcxproj" Id="bad1efd0-4438-41d8-b635-d0a2819c75eb" />
 </Solution>

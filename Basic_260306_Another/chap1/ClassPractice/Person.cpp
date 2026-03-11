@@ -1,4 +1,5 @@
 ﻿#include "Person.h"
+#include "Person.h"
 
 //// 대입을 통해 초기화하는 방법
 //Person::Person()
