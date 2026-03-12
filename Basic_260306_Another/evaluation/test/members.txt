@@ -1,0 +1,3 @@
+456 김예성 010-1234-5678 apple@naver.com
+952 김세진 010-9876-5432 mango@gmail.com
+746 황기태 010-6543-2110 strawberry@daum.com

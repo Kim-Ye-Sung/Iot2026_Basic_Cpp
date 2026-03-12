@@ -11,6 +11,8 @@
   <Project Path="ClassPractice2/ClassPractice2.vcxproj" Id="24cb79b3-8d87-462a-827c-3bc2543e52fb" />
   <Project Path="ClassPractice3/ClassPractice3.vcxproj" Id="9aa4d845-f607-4399-894d-a1690076bad0" />
   <Project Path="ExceptionHandling/ExceptionHandling.vcxproj" Id="bdfa4797-42b2-4036-a190-68db2eb076b0" />
+  <Project Path="File_IO/File_IO.vcxproj" Id="a1786cf9-118d-437c-a08e-b8ce8c617fe2" />
   <Project Path="MultiInheritance/MultiInheritance.vcxproj" Id="d279fc8c-48ca-4c9d-a858-218080065f90" />
+  <Project Path="STL/STL.vcxproj" Id="b936888a-9bfb-4d6d-996f-711e81f728a1" />
   <Project Path="StudentMng/StudentMng.vcxproj" Id="bad1efd0-4438-41d8-b635-d0a2819c75eb" />
 </Solution>
