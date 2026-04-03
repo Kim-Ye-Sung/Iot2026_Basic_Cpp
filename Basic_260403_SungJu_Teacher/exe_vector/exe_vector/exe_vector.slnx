@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="vector/vector.vcxproj" />
+  <Project Path="vector2/vector2.vcxproj" />
+</Solution>
