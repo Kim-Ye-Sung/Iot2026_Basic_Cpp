@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ex_3_tempObj/ex_3_tempObj.vcxproj" />
+  <Project Path="ex_4_tempObj2/ex_4_tempObj2.vcxproj" />
+  <Project Path="ex_5_tempObj3/ex_5_tempObj3.vcxproj" />
+  <Project Path="ex_6_moveconstructor/ex_6_moveconstructor.vcxproj" />
+  <Project Path="templater/templater.vcxproj" />
+  <Project Path="template_swap/template_swap.vcxproj" />
+</Solution>
