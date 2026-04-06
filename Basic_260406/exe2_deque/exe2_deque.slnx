@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="deque1/deque1.vcxproj" Id="123a7778-011a-4f33-b756-63aed7d2ce52" />
+  <Project Path="deque2/deque2.vcxproj" Id="64e5c707-1a91-43ea-bca9-123492391ead" />
+</Solution>

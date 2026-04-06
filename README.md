@@ -774,3 +774,167 @@ Myclass func(const Myclass& obj)
 - 벡터가 생성될때의 메모리 크기는 32byte로 모두 동일하다. sizeof(vector변수명)
 - 그런데 벡터안에 집어넣을수 있는 저장공간은 전혀 다른 개념이다. 
 - 그 외 벡터 관련 함수들 이것저것
+
+
+### ----- 260406 -----
+1. iterator(반복자)
+- C++의 vector 등의 컨테이너에서 요소에 접근하기 위한 `객체`이다.
+- iterator는 포인터가 아니라 `포인터처럼 사용할 수 있도록 만든 클래스 객체`이다.
+- iterator 내부에는 실제 데이터에 접근하기 위한 정보(예: 포인터)가 들어 있다.
+- `단순 객체인데도 *it, ++it 등의 연산이 가능한 이유는 연산자 오버로딩 때문이다.`
+- vector<int>::iterator it; 는 iterator 객체를 생성한 것이다.
+- it = v.begin(); 은
+  begin()이 시작 위치를 가리키는 iterator 객체를 반환하고,
+  그것이 it에 "객체 복사(대입)" 되는 과정이다.
+- *it 를 통해 값에 접근할 수 있는 것은
+  operator*()가 오버로딩되어 있기 때문이다.
+- `iterator 자체는 객체이므로`
+  `cout << it; 는 불가능하다. (출력 연산자 없음)`
+- `&it 는 iterator 객체 자체의 주소이고,`
+  `&(*it) 는 iterator가 가리키는 실제 데이터의 주소이다.`
+
+- 반대로 끝에서부터 하나씩 내려가는 `reverse_iterator`와 
+- 반복자로 가리키고 있는 변수의 값을 바꾸지 못하게끔 const로 지정하는 (마치 const int* pa;와 같은 느낌의) `const_iterator`가 있다.
+
+2. `반복자가 현재 가리키고 있는 와중에, insert나 push_back, pop_back등으로 컨테이너 안의 요소를 변경한다면 반복자가 깨져버린다`(무효화되버린다).
+- 실제로 요소를 변경하고 실행을 하면 컴파일 되고 실행은 되지만 오류 메시지가 나오며 종료된다.
+- 따라서 요소를 변경했다면 다시 해당 반복자를 원하는 위치에 가리키게 초기화해야한다.
+
+3. deque(덱)
+- stack과 queue를 합친 컨테이너로 시작부분과 끝부분, 양쪽에서 삽입과 삭제가 가능한 컨테이너이다.
+
+4. map
+- key와 value를 한 쌍으로 저장하는 컨테이너이다.
+- key는 중복될 수 없고, value는 중복 가능하다.
+- 내부적으로 정렬된 상태로 저장된다. (기본: key 기준 오름차순)
+
+- 데이터 삽입 방법
+  - insert(pair<key, value>(k, v));
+  - insert(make_pair(k, v));
+  - insert({k, v});   // C++11
+  - m[k] = v;         // operator[]
+
+- operator[] 특징
+  - 존재하지 않는 key에 접근하면 자동으로 생성되고 기본값으로 초기화된다.
+
+- map의 원소는 pair 형태이며
+  - first : key
+  - second : value
+
+- 탐색
+  - find()를 통해 key로 검색 가능 (O(log n))
+
+
+
+5. 스마트 포인터 (Smart Pointer)
+
+* 동적 할당된 메모리를 자동으로 관리해주는 객체이다.
+
+* 포인터처럼 사용하지만, 실제로는 클래스 객체이다.
+
+* 메모리 누수(leak)를 방지하기 위해 사용한다.
+
+* RAII(Resource Acquisition Is Initialization) 기반으로 동작한다.
+
+  * 객체 생성 시 자원 획득
+  * 객체 소멸 시 자원 해제
+
+* 종류
+
+  1. unique_ptr
+
+  * 하나의 포인터만 소유 가능
+  * 복사 불가능, 이동만 가능 (move 사용)
+  * 가장 가볍고 기본적으로 사용되는 스마트 포인터
+
+  - ex) unique_ptr<int> p = make_unique<int>(10);
+    - unique_ptr<int> p2 = move(p);
+
+  2. shared_ptr
+
+  * 여러 포인터가 하나의 객체를 공유
+  * 참조 카운트를 통해 관리됨
+  * 마지막 shared_ptr이 소멸될 때 메모리 해제
+
+  - ex) shared_ptr<int> p1 = make_shared<int>(10);
+    - shared_ptr<int> p2 = p1;
+
+  3. weak_ptr
+
+  * shared_ptr를 보조하는 포인터
+  * 소유권 없음 (참조 카운트 증가 X)
+  * 순환 참조 문제 해결용
+
+  - ex) weak_ptr<int> wp = p1;
+
+* 주요 함수
+
+  * make_unique<T>() : unique_ptr 생성
+
+  * make_shared<T>() : shared_ptr 생성
+
+  * get()
+
+    * 내부의 raw pointer 반환
+
+    - ex) p.get();
+
+  * reset()
+
+    * 현재 자원 해제 후 새로운 자원 설정 가능
+
+    - ex) p.reset();
+
+  * use_count() (shared_ptr)
+
+    * 현재 참조 개수 반환
+
+    - ex) p.use_count();
+
+  * lock() (weak_ptr)
+
+    * shared_ptr로 변환하여 접근
+
+    - ex) wp.lock();
+
+* 특징
+
+  * 자동으로 delete 호출됨
+  * 예외 발생 시에도 메모리 안전
+  * 포인터처럼 사용 가능 (*, ->, [] 지원)
+
+* 배열 사용
+
+  - ex) unique_ptr<int[]> arr = make_unique<int[]>(5);
+    - arr[0] = 10;
+
+  * 배열은 반드시 [] 형태로 선언
+
+* 주의사항
+
+  * unique_ptr은 복사 불가
+
+    - ex) unique_ptr<int> p2 = p1; // ❌
+
+  * shared_ptr 중복 생성 금지
+
+    - ex) int* p = new int(10);
+        - shared_ptr<int> p1(p);
+        - shared_ptr<int> p2(p); // ❌ (이중 delete 위험)
+
+  * delete 직접 사용 금지
+
+    - ex) delete p.get(); // ❌
+
+* 선택 기준
+
+  * 기본 사용 → unique_ptr
+  * 여러 곳에서 공유 필요 → shared_ptr
+  * shared_ptr 순환 참조 방지 → weak_ptr
+
+* 핵심 정리
+
+  * unique_ptr : 단일 소유
+  * shared_ptr : 공동 소유
+  * weak_ptr : 비소유 참조
+

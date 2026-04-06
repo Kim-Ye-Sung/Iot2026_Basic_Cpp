@@ -3,6 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="vector/vector.vcxproj" />
-  <Project Path="vector2/vector2.vcxproj" />
+  <Project Path="vector/vector.vcxproj" Id="8560ffcc-5ae6-434a-afee-b19c42c91980" />
+  <Project Path="vector2/vector2.vcxproj" Id="48617748-faec-4a6a-8606-1be5bdbbf339" />
+  <Project Path="vector3/vector3.vcxproj" Id="58a70956-ed0e-466b-a5b1-7b213b6ef8c0" />
 </Solution>
