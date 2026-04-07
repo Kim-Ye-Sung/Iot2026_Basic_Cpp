@@ -3,5 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="SmartPointer1/SmartPointer1.vcxproj" />
+  <Project Path="Thread1/Thread1.vcxproj" />
+  <Project Path="Thread2/Thread2.vcxproj" />
 </Solution>

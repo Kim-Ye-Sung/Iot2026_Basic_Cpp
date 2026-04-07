@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SmartPointer1/SmartPointer1.vcxproj" Id="e823ea84-ce55-40b4-b45b-a1ceca93ea72" />
+  <Project Path="SmartPointer2/SmartPointer2.vcxproj" Id="d0fa60c5-c867-4b04-976c-8eea1323c08a" />
+  <Project Path="SmartPointer3/SmartPointer3.vcxproj" Id="51397ab8-3e79-4e1e-b1b9-a3453139feeb" />
+  <Project Path="SmartPointer4/SmartPointer4.vcxproj" Id="189f6a22-8e3c-4def-a2b1-f38dfb707886" />
+</Solution>
